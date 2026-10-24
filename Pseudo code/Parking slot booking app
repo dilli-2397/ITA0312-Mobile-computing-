@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Body Fitness App</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8f5e9;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px #0002;
+        }
+
+        input, select, button {
+            width: 90%;
+            padding: 12px;
+            margin: 8px;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input, select {
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #2e7d32;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1b5e20;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #content {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f1f8e9;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Online Body Fitness</h1>
+    <p>Your daily fitness and wellness partner</p>
+
+    <section id="auth">
+        <h2>Register / Login</h2>
+
+        <input id="username" placeholder="Enter Username">
+        <input id="password" type="password"
+               placeholder="Enter Password">
+
+        <button onclick="register()">Register</button>
+        <button onclick="login()">Login</button>
+
+        <p id="message"></p>
+    </section>
+
+    <section id="dashboard" class="hidden">
+        <h2>Fitness Dashboard</h2>
+
+        <button onclick="showBlogs()">Fitness Blog</button>
+        <button onclick="showDiet()">Diet Planner</button>
+        <button onclick="showVideos()">Fitness Videos</button>
+        <button onclick="showSubscription()">Payment and Subscription</button>
+
+        <div id="content">
+            <p>Select a feature to continue.</p>
+        </div>
+
+        <button onclick="logout()">Logout</button>
+    </section>
+</div>
+
+<script>
+    let users = {};
+
+    function register() {
+        let u = document.getElementById("username").value.trim();
+        let p = document.getElementById("password").value;
+
+        if (u === "" || p === "") {
+            message.textContent =
+                "Please enter username and password.";
+        } else if (users[u]) {
+            message.textContent = "Username already exists.";
+        } else {
+            users[u] = p;
+            message.textContent =
+                "Registration successful. Please log in.";
+        }
+    }
+
+    function login() {
+        let u = document.getElementById("username").value.trim();
+        let p = document.getElementById("password").value;
+
+        if (users[u] === p && u !== "") {
+            message.textContent = "Login successful!";
+            document.getElementById("auth").classList.add("hidden");
+            document.getElementById("dashboard").classList.remove("hidden");
+        } else {
+            message.textContent =
+                "Invalid login. Please register or check your details.";
+        }
+    }
+
+    function showBlogs() {
+        document.getElementById("content").innerHTML = `
+            <h3>Fitness Blogs</h3>
+            <p>1. Warm up before exercise.</p>
+            <p>2. Exercise regularly.</p>
+            <p>3. Maintain correct posture.</p>
+            <p>4. Get enough rest and sleep.</p>
+        `;
+    }
+
+    function showDiet() {
+        document.getElementById("content").innerHTML = `
+            <h3>Daily Diet Planner</h3>
+            <p><b>Breakfast:</b> Oats, fruits and milk.</p>
+            <p><b>Lunch:</b> Rice, vegetables and protein-rich foods.</p>
+            <p><b>Evening:</b> Fruit or a light snack.</p>
+            <p><b>Dinner:</b> A balanced meal with vegetables.</p>
+            <p>Drink water regularly throughout the day.</p>
+        `;
+    }
+
+    function showVideos() {
+        document.getElementById("content").innerHTML = `
+            <h3>Fitness Videos</h3>
+            <p>1. Beginner Home Workout</p>
+            <p>2. Yoga for Flexibility</p>
+            <p>3. Cardio Workout</p>
+            <p>4. Strength Training Basics</p>
+            <p>These are sample video titles.</p>
+        `;
+    }
+
+    function showSubscription() {
+        document.getElementById("content").innerHTML = `
+            <h3>Payment and Subscription</h3>
+            <p>Select your fitness plan.</p>
+
+            <select id="plan">
+                <option value="Free">Free Plan - Rs. 0</option>
+                <option value="Premium">Premium Plan - Rs. 199</option>
+            </select>
+
+            <button onclick="subscribe()">Choose Plan</button>
+            <p id="paymentMessage"></p>
+        `;
+    }
+
+    function subscribe() {
+        let plan = document.getElementById("plan").value;
+
+        if (plan === "Free") {
+            document.getElementById("paymentMessage").textContent =
+                "Free plan selected successfully.";
+        } else {
+            document.getElementById("paymentMessage").textContent =
+                "Premium plan selected. Actual payment is not enabled.";
+        }
+    }
+
+    function logout() {
+        document.getElementById("dashboard").classList.add("hidden");
+        document.getElementById("auth").classList.remove("hidden");
+        document.getElementById("content").innerHTML =
+            "<p>Select a feature to continue.</p>";
+        document.getElementById("message").textContent =
+            "You have logged out.";
+    }
+</script>
+
+</body>
+</html>
