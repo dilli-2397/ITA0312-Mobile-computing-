@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Self-Care App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8f5e9;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            max-width: 450px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        input, button {
+            width: 90%;
+            padding: 12px;
+            margin: 8px;
+        }
+        button {
+            background: #2e7d32;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Health and Self-Care</h1>
+
+    <h3>Register / Login</h3>
+    <input id="user" placeholder="Username">
+    <input id="pass" type="password" placeholder="Password">
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+
+    <p id="message"></p>
+
+    <div id="dashboard" hidden>
+        <h2>Welcome!</h2>
+        <button onclick="health()">Health Routine Blogs</button>
+        <button onclick="selfcare()">Self-Care Blogs</button>
+        <div id="content"></div>
+    </div>
+</div>
+
+<script>
+    let users = {};
+
+    function register() {
+        let u = document.getElementById("user").value;
+        let p = document.getElementById("pass").value;
+
+        if (!u || !p) {
+            message.textContent = "Enter username and password";
+        } else if (users[u]) {
+            message.textContent = "Username already exists";
+        } else {
+            users[u] = p;
+            message.textContent = "Registration successful";
+        }
+    }
+
+    function login() {
+        let u = user.value;
+        let p = pass.value;
+
+        if (users[u] === p && u !== "") {
+            message.textContent = "Login successful";
+            dashboard.hidden = false;
+        } else {
+            message.textContent = "Invalid login";
+        }
+    }
+
+    function health() {
+        content.innerHTML =
+            "<h3>Health Routine</h3>" +
+            "<p>1. Sleep regularly</p>" +
+            "<p>2. Exercise daily</p>" +
+            "<p>3. Drink enough water</p>";
+    }
+
+    function selfcare() {
+        content.innerHTML =
+            "<h3>Self-Care Tips</h3>" +
+            "<p>1. Practice meditation</p>" +
+            "<p>2. Take screen breaks</p>" +
+            "<p>3. Spend time on hobbies</p>";
+    }
+</script>
+</body>
+</html>
