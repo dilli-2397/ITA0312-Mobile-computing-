@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Slot Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e0f7fa;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        input, button {
+            width: 90%;
+            padding: 12px;
+            margin: 8px;
+        }
+        button {
+            background: #00838f;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .slot {
+            display: inline-block;
+            width: 100px;
+            padding: 15px 5px;
+            margin: 6px;
+            background: #a5d6a7;
+            border-radius: 8px;
+        }
+        .occupied {
+            background: #ef9a9a;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Parking Slot Booking</h1>
+
+    <h3>Register / Login</h3>
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+
+    <p id="message"></p>
+
+    <div id="dashboard" hidden>
+        <h2>Parking Dashboard</h2>
+        <h3>Empty Slots: <span id="count">0</span></h3>
+        <div id="slots"></div>
+        <p id="status"></p>
+    </div>
+</div>
+
+<script>
+    let users = {};
+
+    let parking = {
+        1: true,
+        2: true,
+        3: false,
+        4: true,
+        5: false
+    };
+
+    function register() {
+        let u = username.value;
+        let p = password.value;
+
+        if (!u || !p) {
+            message.textContent = "Enter username and password";
+        } else if (users[u]) {
+            message.textContent = "Username already exists";
+        } else {
+            users[u] = p;
+            message.textContent = "Registration successful";
+        }
+    }
+
+    function login() {
+        if (users[username.value] === password.value &&
+            username.value !== "") {
+            message.textContent = "Login successful";
+            dashboard.hidden = false;
+            displaySlots();
+        } else {
+            message.textContent = "Invalid login";
+        }
+    }
+
+    function displaySlots() {
+        let free = Object.values(parking).filter(Boolean).length;
+        count.textContent = free;
+        slots.innerHTML = "";
+
+        for (let n in parking) {
+            let div = document.createElement("div");
+            div.className = parking[n] ? "slot" : "slot occupied";
+
+            let label = document.createElement("p");
+            label.textContent = "Slot " + n +
+                (parking[n] ? " (Free)" : " (Occupied)");
+            div.appendChild(label);
+
+            if (parking[n]) {
+                let btn = document.createElement("button");
+                btn.textContent = "Book";
+                btn.onclick = function() {
+                    bookSlot(n);
+                };
+                div.appendChild(btn);
+            }
+
+            slots.appendChild(div);
+        }
+    }
+
+    function bookSlot(n) {
+        if (parking[n]) {
+            parking[n] = false;
+            status.textContent = "Slot " + n +
+                " booked successfully";
+            displaySlots();
+        } else {
+            status.textContent = "Slot already occupied";
+        }
+    }
+</script>
+</body>
+</html>
