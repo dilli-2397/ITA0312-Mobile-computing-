@@ -1,0 +1,10 @@
+def split_uniform(m0,k): return m0*(4**k)
+def split_selective(m0,f,k): return m0*((1+3*f)**k)
+print("Q6 - CELL SPLITTING RECURRENCES")
+m0=19
+for k in range(4): print(f"Round {k}: cells = {split_uniform(m0,k)}")
+print("Uniform: M_k = 4 M_(k-1) = 4^k M_0")
+print("Selective: M_k = M_(k-1)(1+3f_k)")
+print("Radius: R_k = R_0/2^k")
+print("Power model: P_k = P_0/2^(kn)")
+print("Only split persistent hotspots to avoid unnecessary site cost.")
