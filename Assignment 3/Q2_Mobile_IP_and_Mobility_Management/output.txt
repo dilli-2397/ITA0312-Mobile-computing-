@@ -1,0 +1,14 @@
+Q2 - MOBILE IP REGISTRATION AND TUNNELLING
+1. Mobile Node enters foreign network
+2. Foreign Agent provides Care-of Address
+3. Mobile Node sends registration request
+4. Home Agent authenticates request
+5. Home Agent updates binding: Home IP -> Care-of Address
+6. Registration reply reaches Mobile Node
+7. Correspondent packet reaches Home Agent
+8. Home Agent tunnels packet to Care-of Address
+9. Foreign Agent delivers packet to Mobile Node
+Original packet size: 1000 bytes
+Encapsulated packet size: 1020 bytes
+Tunnelling overhead: 20 bytes (2.0%)
+Result: the Home Agent forwards traffic to the mobile node's current location.
