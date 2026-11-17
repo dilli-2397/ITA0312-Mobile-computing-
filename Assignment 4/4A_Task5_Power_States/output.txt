@@ -1,0 +1,8 @@
+4A TASK 5 - POWER STATE POLICY
+Active | Screen on/user interaction | Foreground UI; short bounded work
+Idle | Screen off/no interaction | Batch jobs and limited sampling
+Doze/Suspended | Stationary, unplugged, screen off | System wake events; defer app network work
+Charging | Power connected | Batch sync, backup and maintenance
+Urgent push: system push service receives event; do not hold permanent wakelock.
+At 15% battery: increase stationary sampling interval, batch uploads, defer non-urgent work.
+Emergency exception: visible, time-limited foreground operation with bounded wake time.
