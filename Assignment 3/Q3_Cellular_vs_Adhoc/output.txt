@@ -1,0 +1,8 @@
+Q3 - CELLULAR VS AD HOC NETWORK
+Cellular path: Mobile-A -> Base-Station -> Core-Network -> Server
+Cellular hops: 3
+Ad hoc path: Mobile-A -> Node-B -> Node-C -> Server
+Ad hoc hops: 3
+Cellular: infrastructure and base station required.
+Ad hoc: nodes forward packets without fixed base-station infrastructure.
+Disaster case: ad hoc communication remains possible if relay nodes form a connected path.
