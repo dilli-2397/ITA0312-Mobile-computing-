@@ -1,0 +1,9 @@
+Q9 - EXPERIMENTAL METRICS
+Mean SIR — average radio quality
+5th percentile SIR — cell-edge reliability
+Outage probability — fraction below 14 dB
+Blocking probability — Erlang-B or measured blocked calls
+Sites required — coverage and deployment cost
+Handoffs/user-hour — mobility signalling load
+Runtime — simulation efficiency
+Keep analytical, simulated and field-measured results separate.
