@@ -1,0 +1,5 @@
+Q7 - SOLVING THE RECURRENCE
+k = ceil(log_4(D/C0))
+Demand ratio 4 -> 1 round; 8 -> 2; 16 -> 2; 32 -> 3; 64 -> 3.
+Example demand 8x -> 2 rounds -> 16 child cells per original cell.
+Selective splitting uses g=1+3f.
