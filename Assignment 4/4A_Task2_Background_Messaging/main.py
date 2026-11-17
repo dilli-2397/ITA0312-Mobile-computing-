@@ -1,0 +1,6 @@
+platforms={"Android":"Linux; Binder; ART; FCM; Doze; per-app UID sandbox","iOS":"XNU; Mach/XPC; native Swift/Obj-C; APNs; strict background policy","Windows":"Windows NT; WinRT/COM; CLR or native; push/background task policy"}
+print("4A TASK 2 - CROSS-PLATFORM BACKGROUND MESSAGING")
+for p,d in platforms.items(): print(f"{p}: {d}")
+print("Incoming message: push service -> OS policy -> notification/eligible callback -> encrypted local persistence")
+print("Killed process: visible push may still appear; silent callback is not guaranteed.")
+print("Design: server-side durable queue + authenticated fetch + idempotent message ID + encrypted storage.")
