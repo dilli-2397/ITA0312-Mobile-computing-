@@ -1,0 +1,8 @@
+Q6 - AODV VS DSDV ROUTING COMPARISON
+Mobility | Nodes | DSDV periodic updates | AODV route requests | DSDV setup delay | AODV setup delay
+Low | 10 | 10 | 2 | 5 ms | 15 ms
+Medium | 25 | 25 | 5 | 5 ms | 25 ms
+High | 50 | 50 | 10 | 5 ms | 40 ms
+DSDV keeps routes ready but sends periodic updates.
+AODV discovers routes on demand, reducing idle updates but adding discovery delay.
+For frequent topology changes, AODV is generally preferred in this model.
