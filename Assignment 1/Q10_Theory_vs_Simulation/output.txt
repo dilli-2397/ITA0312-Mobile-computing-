@@ -1,0 +1,7 @@
+Q10 - THEORY VS SIMULATION
+Theory assumes equal-distance interferers; simulation uses individual distances.
+Theory may omit shadowing, fading, buildings and antenna side lobes.
+Erlang-B assumes random arrivals and no waiting queue.
+Mobility and handoff reservations alter real results.
+Validate N=7,n=4 SIR at approximately 18.7 dB.
+Discuss the cause and design impact of each difference.
