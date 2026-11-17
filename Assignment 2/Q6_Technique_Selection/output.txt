@@ -1,0 +1,9 @@
+Q6 - WEIGHTED ACCESS TECHNIQUE SCORES
+Technique | Score out of 5
+OFDMA | 4.15
+CDMA | 3.50
+TDMA | 3.35
+SDMA | 3.10
+FDMA | 2.90
+Weights: efficiency 25%, scalability 20%, robustness 20%, QoS 20%, simplicity 15%.
+Top overall technique: OFDMA
