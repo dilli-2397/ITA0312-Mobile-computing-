@@ -1,0 +1,6 @@
+Q3 - CDMA BER SIMULATION (4 USERS)
+Code length | Orthogonal BER | Random-code BER | Near-far BER
+8 | 0.0000 | 0.4960 | 0.3574
+16 | 0.0000 | 0.4944 | 0.4083
+64 | 0.0000 | 0.5070 | 0.1921
+Assumption: synchronous Walsh baseline; random interferers model loss of ideal orthogonality.
