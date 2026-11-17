@@ -1,0 +1,6 @@
+Q11 - RECOMMENDED FINAL DESIGN
+Hybrid macro-micro network.
+Baseline: N=7, R=0.5 km, Q=4.583, 48 channels/cell.
+12 km^2 needs about 19 ideal cells (about 21 with boundary allowance).
+Use sectors and micro-cells at hotspots; apply DCA and admission control.
+100,000 users offer 2,500 Erlangs: substantial densification is required.
