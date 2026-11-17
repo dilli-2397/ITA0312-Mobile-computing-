@@ -1,0 +1,7 @@
+Q5 - SDMA ARRAY SIR
+Elements | First tested separation meeting 10 dB
+2 | 55 degrees
+4 | 25 degrees
+8 | 15 degrees
+16 | 10 degrees
+Assumptions: half-wavelength spacing, broadside steering, one interferer.
