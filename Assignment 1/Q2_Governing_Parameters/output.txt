@@ -1,0 +1,10 @@
+Q2 - GOVERNING DESIGN PARAMETERS
+Township area: 12 km^2
+Spectrum: 336 duplex channels
+Cluster size N: 7
+Cell radius: 0.5 km (planning assumption)
+Path-loss exponent n: 3.5
+SIR target: 14 dB
+Traffic per user: 0.025 Erlang
+Blocking target: 2%
+Larger N improves SIR but reduces channels per cell; smaller cells increase sites and handoffs.
