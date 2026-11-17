@@ -1,0 +1,7 @@
+Q4 - BEST, AVERAGE AND WORST SIR
+Baseline six-interferer estimate (N=7,n=3.5): about 15.4 dB
+Best: close to serving base station, strong desired signal.
+Average: typical user location and propagation.
+Worst: cell edge/corner, weaker desired signal and nearby interferers.
+1.5x serving distance causes about 6.2 dB desired-link loss.
+Use mean, median and 5th-percentile SIR in evaluation.
