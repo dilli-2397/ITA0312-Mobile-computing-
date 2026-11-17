@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="304" viewBox="0 0 1120 304">
+<rect width="100%" height="100%" fill="#111827"/>
+<rect width="100%" height="42" fill="#263244"/>
+<circle cx="22" cy="21" r="6" fill="#ef4444"/><circle cx="44" cy="21" r="6" fill="#f59e0b"/><circle cx="66" cy="21" r="6" fill="#22c55e"/>
+<text x="90" y="27" fill="#e5e7eb" font-family="Arial" font-size="15">Captured Python console output — Q7_Shared_Pool_Redesign</text>
+<text x="28" y="78" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">Q7 - DEDICATED VS SHARED-POOL TELEMETRY</text>
+<text x="28" y="106" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">Sensors: 5000; observation: 60 minutes</text>
+<text x="28" y="134" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">Generated and delivered reports: 270232</text>
+<text x="28" y="162" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">Dedicated resources: 5000</text>
+<text x="28" y="190" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">Shared-pool resources: 2500; reduction: 50.0%</text>
+<text x="28" y="218" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">Reports delayed beyond 60 seconds: 261771</text>
+<text x="28" y="246" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">Mean delivery delay: 24.05 minutes</text>
+<text x="28" y="274" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">The 50% resource target is reached, but the 99% within-60-second target is not.</text>
+</svg>
