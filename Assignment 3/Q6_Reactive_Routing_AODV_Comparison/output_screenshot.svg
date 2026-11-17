@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="321" viewBox="0 0 1200 321">
+<rect width="100%" height="100%" fill="#111827"/><rect width="100%" height="42" fill="#263244"/>
+<circle cx="22" cy="21" r="6" fill="#ef4444"/><circle cx="44" cy="21" r="6" fill="#f59e0b"/><circle cx="66" cy="21" r="6" fill="#22c55e"/>
+<text x="90" y="27" fill="#e5e7eb" font-family="Arial" font-size="15">Python console output — Q6_Reactive_Routing_AODV_Comparison</text>
+<text x="26" y="76" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">Q6 - AODV AND DSDV CONTROL-OVERHEAD MODEL</text>
+<text x="26" y="103" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">Nodes | AODV on-demand messages | DSDV periodic messages</text>
+<text x="26" y="130" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">   10 |                      18 |                     90</text>
+<text x="26" y="157" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">   25 |                     120 |                    600</text>
+<text x="26" y="184" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">   50 |                     490 |                   2450</text>
+<text x="26" y="211" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">AODV discovers routes when traffic needs them.</text>
+<text x="26" y="238" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">DSDV exchanges routing information periodically.</text>
+<text x="26" y="265" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">Selection: AODV is preferred for dynamic, intermittent emergency traffic.</text>
+<text x="26" y="292" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">Counts are simplified illustrative message units, not protocol packet traces.</text>
+</svg>
