@@ -1,0 +1,11 @@
+4A TASK 1 - ANDROID ARCHITECTURE
+1. Hardware: CPU, RAM, modem, sensors
+2. Linux kernel + drivers: Scheduling, memory, drivers, Binder
+3. HAL: Vendor hardware interfaces
+4. Native libraries/services: Graphics, media, SQLite, TLS, system services
+5. ART: DEX verification, JIT/AOT, garbage collection
+6. Application framework: Activities, services, permissions, notifications
+7. Applications: UI, business logic and data
+Call path: App -> Framework API -> Binder service -> HAL/native code -> Kernel driver
+Security: UID sandbox + SELinux + permission checks + Keystore
+Power: PowerManager/Doze + kernel suspend/DVFS
