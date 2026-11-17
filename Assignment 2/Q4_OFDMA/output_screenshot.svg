@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="248" viewBox="0 0 1120 248">
+<rect width="100%" height="100%" fill="#111827"/>
+<rect width="100%" height="42" fill="#263244"/>
+<circle cx="22" cy="21" r="6" fill="#ef4444"/><circle cx="44" cy="21" r="6" fill="#f59e0b"/><circle cx="66" cy="21" r="6" fill="#22c55e"/>
+<text x="90" y="27" fill="#e5e7eb" font-family="Arial" font-size="15">Captured Python console output — Q4_OFDMA</text>
+<text x="28" y="78" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">Q4 - OFDMA SCHEDULING (1000 REALIZATIONS)</text>
+<text x="28" y="106" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">Method | Mean sum-rate | Jain fairness</text>
+<text x="28" y="134" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">fixed | 185.469 | 0.977</text>
+<text x="28" y="162" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">round_robin | 185.360 | 0.978</text>
+<text x="28" y="190" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">channel_aware | 299.677 | 0.903</text>
+<text x="28" y="218" fill="#d1fae5" font-family="Consolas, monospace" font-size="17">Rate model: log2(1 + SNR x gain), normalized bandwidth per tone.</text>
+</svg>
