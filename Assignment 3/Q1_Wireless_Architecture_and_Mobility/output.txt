@@ -1,0 +1,14 @@
+Q1 - WIRELESS MOBILITY AND HANDOFF
+Step | Signal dBm | Network state
+   1 |        -55 | Connected
+   2 |        -62 | Connected
+   3 |        -71 | Connected
+   4 |        -79 | Handoff triggered
+   5 |        -83 | Handoff triggered
+   6 |        -60 | Connected
+   7 |        -68 | Connected
+   8 |        -78 | Handoff triggered
+   9 |        -82 | Handoff triggered
+  10 |        -58 | Connected
+Total handoff events: 4
+Model: a handoff is triggered whenever signal falls below -75 dBm.
