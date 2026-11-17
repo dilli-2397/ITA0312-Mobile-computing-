@@ -1,0 +1,13 @@
+4A TASK 3 - RUNTIME AND APP LAUNCH
+1. Launcher requests Activity
+2. ActivityTaskManager resolves package
+3. Zygote forks isolated app process
+4. ART maps/verifies DEX and initialises heap
+5. Application object is created
+6. Activity callbacks run
+7. Views are measured and laid out
+8. Renderer submits first frame
+Android: DEX; ART interpreter/JIT/profile-guided AOT; managed heap and GC.
+iOS: native Mach-O; Objective-C runtime; ARC reference counting.
+Windows: native PE or managed .NET assembly; CLR JIT for managed code.
+Cold start creates process/runtime; warm start may reuse a live process.
