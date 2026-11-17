@@ -1,0 +1,11 @@
+4B TASK 6 - BATTERY-AWARE POLICY SIMULATION
+Scenario | Battery | Network | Motion | Interval(s) | Upload
+Normal Wi-Fi moving | 80% | WIFI | MOVING | 10 | batch every 2 min
+Low LTE stationary | 20% | LTE | STATIONARY | 120 | defer unless threshold
+Offline moving | 60% | OFFLINE | MOVING | 30 | encrypted queue
+Emergency | 45% | WIFI | MOVING | 2 | priority upload
+Critical offline | 12% | OFFLINE | STATIONARY | 300 | encrypted queue
+Security: encrypt before local persistence; authenticate + TLS before upload; ACK before marking synced.
+Test thresholds 30%, 15%, offline, unknown motion and emergency override.
+Energy values are not measured; calibrate coefficients using Battery Historian on target hardware.
+Emergency fleet of 5000 devices needs priority queues, back-pressure, time limits and audit.
