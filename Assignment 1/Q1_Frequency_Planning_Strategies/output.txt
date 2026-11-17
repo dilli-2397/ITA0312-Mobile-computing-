@@ -1,0 +1,5 @@
+Q1 - FREQUENCY PLANNING STRATEGIES
+Fixed reuse: 336/7 = 48 channels per cell; simple and predictable.
+Sectorisation: directional antennas reduce dominant co-channel interference.
+Macro-micro + DCA: add small cells at hotspots and coordinate dynamic channels.
+Recommendation: hybrid macro-micro with sectorisation at busy sites.
