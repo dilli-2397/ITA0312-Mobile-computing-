@@ -1,0 +1,8 @@
+Q2 - FDMA AND TDMA CAPACITY MODEL
+FDMA nominal=80, illustrative usable=74
+TDMA nominal=80, illustrative usable=70
+Traffic | Requests | FDMA blocked | TDMA blocked
+Steady voice | 60 | 0 | 0
+Bursty telemetry | 500 | 426 | 430
+Synchronized | 200 | 126 | 130
+Note: simplified snapshot model; overhead assumptions are illustrative.
