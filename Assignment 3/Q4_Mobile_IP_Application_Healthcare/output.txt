@@ -1,0 +1,9 @@
+Q4 - MOBILE HEALTHCARE COMMUNICATION
+Application: doctor accesses hospital records while moving
+Packets sent: 100
+Packets delivered: 98
+Packet delivery ratio: 98.0%
+Handoff interruptions: 2
+Estimated average delay: 47.4 ms
+Requirements: privacy, authentication, reliable delivery and low delay.
+Note: illustrative analytical model, not a live network measurement.
