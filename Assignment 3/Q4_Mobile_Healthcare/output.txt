@@ -1,0 +1,12 @@
+Q4 - MOBILE HEALTHCARE CONNECTIVITY
+Location | Network event | Handoffs | Delay (ms)
+Hospital ward | Connected | 0 | 20
+Emergency wing | Handoff | 1 | 60
+Ambulance bay | Handoff | 1 | 80
+Remote clinic | Connected | 0 | 25
+Packets sent: 100
+Packets lost during handoff (model): 4
+Packets delivered: 96
+Delivery ratio: 96.0%
+Mean event delay: 46.2 ms
+Requirements: low delay, reliable delivery, secure access and seamless handoff.
