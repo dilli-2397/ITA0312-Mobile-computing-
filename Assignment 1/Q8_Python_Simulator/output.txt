@@ -1,0 +1,4 @@
+Q8 - REPRODUCIBLE SIMULATOR BASELINE
+Evaluates N=3,4,7,12; integer channels/cell; Erlang-B at 2% blocking; SIR at n=4.
+Known sanity check: N=7,n=4 -> 18.7 dB.
+A full Monte Carlo extension needs fixed random seed, sampled mobile locations, shadowing and antenna patterns.
