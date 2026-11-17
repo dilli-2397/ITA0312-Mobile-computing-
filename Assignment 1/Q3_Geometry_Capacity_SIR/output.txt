@@ -1,0 +1,9 @@
+Q3 - MATHEMATICAL DERIVATIONS
+Hex area = (3√3/2)R²
+For R=0.5 km: area ≈ 0.6495 km²
+Cells for 12 km² = 19 (ideal)
+N=7: Q=√21 ≈ 4.583
+Channels/cell = 336/7 = 48
+Erlang-B at 2% blocking is calculated by the script.
+SIR N=7,n=3.5 ≈ 15.4 dB
+SIR sanity check N=7,n=4 ≈ 18.7 dB
