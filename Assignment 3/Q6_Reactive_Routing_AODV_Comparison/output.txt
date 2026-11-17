@@ -1,0 +1,9 @@
+Q6 - AODV AND DSDV CONTROL-OVERHEAD MODEL
+Nodes | AODV on-demand messages | DSDV periodic messages
+   10 |                      18 |                     90
+   25 |                     120 |                    600
+   50 |                     490 |                   2450
+AODV discovers routes when traffic needs them.
+DSDV exchanges routing information periodically.
+Selection: AODV is preferred for dynamic, intermittent emergency traffic.
+Counts are simplified illustrative message units, not protocol packet traces.
