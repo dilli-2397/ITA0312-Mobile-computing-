@@ -1,0 +1,8 @@
+Q7 - EMERGENCY NETWORK EXPERIMENT
+Nodes | Mobility | Packet delivery ratio | Mean delay (ms) | Routing control messages
+10 | Low | 98% | 20 | 12
+25 | Medium | 94% | 35 | 38
+50 | High | 88% | 60 | 95
+Design: wireless ad hoc nodes + AODV + gateway + optional Mobile IP for home-network continuity.
+Failure handling: repair routes after link failure; buffer and forward messages after disconnection.
+Evaluation: higher mobility increases delay and routing overhead and can reduce packet delivery.
