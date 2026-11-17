@@ -1,0 +1,5 @@
+Q3 - CELLULAR AND AD HOC CONNECTIVITY
+Cellular PhoneA -> Server: reachable
+Ad hoc RescueA -> Hospital: reachable
+After RescueB-RescueC link failure: unreachable
+Finding: cellular uses infrastructure; ad hoc uses peer multi-hop links.
