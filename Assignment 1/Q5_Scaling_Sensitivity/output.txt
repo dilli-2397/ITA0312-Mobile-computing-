@@ -1,0 +1,6 @@
+Q5 - SCALING AND SENSITIVITY
+Channels/cell: N=3:112, N=4:84, N=7:48, N=12:28
+Increasing N improves reuse distance but reduces channels/cell.
+Halving radius -> one-quarter area -> about 4x cell count.
+100,000 users x 0.025 Erlang = 2,500 Erlangs.
+Large demand requires small cells, sectors and traffic management.
