@@ -1,0 +1,6 @@
+Q12 - STADIUM EVENT-DAY DESIGN
+50,000 users x 0.025 Erlang = 1,250 Erlangs offered traffic.
+Event area = 1 km^2; 0.5 km macro cell area ≈ 0.6495 km^2.
+Use temporary micro/pico cells and sectorisation for the concentrated surge.
+Provide backhaul, power, admission control and emergency-service priority.
+Test before the event and remove/redeploy temporary capacity afterwards.
