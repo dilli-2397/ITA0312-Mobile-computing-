@@ -1,0 +1,8 @@
+4B TASK 3 - ART BENCHMARK
+CPU workload: prime count below 5000 = 669
+Allocation workload: compare bounded and unbounded short-lived objects.
+UI workload: render/scroll a large list and record frame timing.
+Test compilation modes if supported: verify, speed-profile, speed.
+Command: adb shell cmd package compile -m speed-profile -f <package>
+Capture GC logs with adb logcat and heap timeline with Android Studio Memory Profiler.
+Leak/ANR tests belong in a disposable test build; never force OOM on a personal device.
