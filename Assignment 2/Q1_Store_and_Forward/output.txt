@@ -1,0 +1,5 @@
+Q1 - STORE-AND-FORWARD SIMULATION
+Availability | Immediate delivered | Lost | Queued delivered | Delayed | Mean delay
+90% | 91 | 9 | 100 | 91 | 5.29 min
+60% | 58 | 42 | 100 | 99 | 42.82 min
+30% | 30 | 70 | 100 | 98 | 121.86 min
