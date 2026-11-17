@@ -1,0 +1,6 @@
+Q4 - OFDMA SCHEDULING (1000 REALIZATIONS)
+Method | Mean sum-rate | Jain fairness
+fixed | 185.469 | 0.977
+round_robin | 185.360 | 0.978
+channel_aware | 299.677 | 0.903
+Rate model: log2(1 + SNR x gain), normalized bandwidth per tone.
