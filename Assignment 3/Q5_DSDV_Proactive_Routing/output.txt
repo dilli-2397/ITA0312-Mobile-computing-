@@ -1,0 +1,7 @@
+Q5 - DSDV PROACTIVE ROUTING
+Nodes | Update rounds | Table entries | Control updates | Route availability
+10 | 2 | 90 | 20 | 100% (stable topology)
+25 | 4 | 600 | 100 | 100% (stable topology)
+50 | 6 | 2450 | 300 | 100% (stable topology)
+Sequence numbers identify fresh routes and help prevent routing loops.
+Trade-off: routes are ready when needed, but periodic updates consume bandwidth.
