@@ -1,0 +1,10 @@
+Q5 - DSDV ROUTING TABLE
+Destination | Next hop | Hop count | Sequence
+     A      |    A     |     0     | 10
+     B      |    B     |     1     | 12
+     C      |    C     |     1     | 14
+     D      |    B     |     2     | 16
+Event: link B-D fails; a fresh route advertisement arrives via C.
+Updated route to D: ('C', 2, 18)
+DSDV uses destination sequence numbers to prefer fresh routes.
+A periodic update maintains routes even before data is requested.
