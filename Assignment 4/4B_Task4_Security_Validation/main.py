@@ -1,0 +1,6 @@
+tests=[("Exported Activity","Untrusted app invokes component","Not exported or permission protected"),("Repackaged APK","Signature changed","Signature verification rejects"),("Camera/location","No runtime consent","Access denied/feature degrades safely"),("Cleartext HTTP","Network observer reads traffic","TLS enforced; cleartext blocked"),("Biometric key","User not authenticated","Key operation denied")]
+print("4B TASK 4 - SECURITY AUDIT TEST MATRIX")
+for n,a,e in tests: print(f"{n} | Attack: {a} | Expected: {e}")
+print("Use OS biometric prompt and authentication-bound keys; never store biometric templates.")
+print("Audit work-profile identity, storage, clipboard, backup, certificates and wipe scope.")
+print("Use test data only; never weaken production security or intercept real patient data.")
