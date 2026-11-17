@@ -1,0 +1,10 @@
+Q2 - MOBILE IP REGISTRATION AND PACKET DELIVERY
+Packets sent: 50
+Payload per packet: 200 bytes
+Encapsulation overhead: 20 bytes per packet
+Total tunnel overhead: 1000 bytes
+Total tunneled bytes: 11000 bytes
+Registration delay (model input): 120 ms
+Handoff interruption (model input): 40 ms
+Combined mobility interruption: 160 ms
+Flow: MN obtains CoA -> sends registration -> HA updates binding -> HA tunnels packets to CoA.
