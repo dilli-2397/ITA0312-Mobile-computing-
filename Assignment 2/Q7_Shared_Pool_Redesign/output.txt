@@ -1,0 +1,8 @@
+Q7 - DEDICATED VS SHARED-POOL TELEMETRY
+Sensors: 5000; observation: 60 minutes
+Generated and delivered reports: 270232
+Dedicated resources: 5000
+Shared-pool resources: 2500; reduction: 50.0%
+Reports delayed beyond 60 seconds: 261771
+Mean delivery delay: 24.05 minutes
+The 50% resource target is reached, but the 99% within-60-second target is not.
