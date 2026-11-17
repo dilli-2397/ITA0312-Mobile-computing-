@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="348" viewBox="0 0 1200 348">
+<rect width="100%" height="100%" fill="#111827"/><rect width="100%" height="42" fill="#263244"/>
+<circle cx="22" cy="21" r="6" fill="#ef4444"/><circle cx="44" cy="21" r="6" fill="#f59e0b"/><circle cx="66" cy="21" r="6" fill="#22c55e"/>
+<text x="90" y="27" fill="#e5e7eb" font-family="Arial" font-size="15">Python console output — Q5_Proactive_Routing_DSDV</text>
+<text x="26" y="76" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">Q5 - DSDV ROUTING TABLE</text>
+<text x="26" y="103" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">Destination | Next hop | Hop count | Sequence</text>
+<text x="26" y="130" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">     A      |    A     |     0     | 10</text>
+<text x="26" y="157" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">     B      |    B     |     1     | 12</text>
+<text x="26" y="184" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">     C      |    C     |     1     | 14</text>
+<text x="26" y="211" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">     D      |    B     |     2     | 16</text>
+<text x="26" y="238" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">Event: link B-D fails; a fresh route advertisement arrives via C.</text>
+<text x="26" y="265" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">Updated route to D: ('C', 2, 18)</text>
+<text x="26" y="292" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">DSDV uses destination sequence numbers to prefer fresh routes.</text>
+<text x="26" y="319" fill="#d1fae5" font-family="Consolas, monospace" font-size="16">A periodic update maintains routes even before data is requested.</text>
+</svg>
